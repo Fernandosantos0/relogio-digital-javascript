@@ -27,6 +27,34 @@ window.onload = function() {
 
     };
 
+    const mudaFundo = function(time) {
+        switch(time) {
+            case 'Bom madrugada!':
+                document.body.style.backgroundImage = 'url(assets/images/bg-madrugada.jpg)';
+                break;
+
+            case 'Bom dia!':
+                document.body.style.backgroundImage = 'url(assets/images/bg-dia.jpg)';
+                break;
+
+            case 'Boa tarde!':
+                document.body.style.backgroundImage = 'url(assets/images/bg-tarde.jpg)';
+                break;
+
+            case 'Boa noite!':
+                document.body.style.backgroundImage = 'url(assets/images/bg-noite.jpg)';
+                break;
+
+            case 'Erro!':
+                document.body.style.backgroundColor = 'hsl(4°, 65%, 57%)';
+                break;
+
+            default:
+                document.body.style.backgroundImage = 'url(assets/images/bg-img.jpg)';
+                break;
+        }
+    };
+
     setInterval(() => {
         const hora = document.querySelector('#hora');
         const minuto = document.querySelector('#minuto');
@@ -39,11 +67,11 @@ window.onload = function() {
         const getSegundo = dataTime.getSeconds();
 
         const comprimento = com(getHora);
+        mudaFundo(comprimento);
 
         hora.textContent = inserirZero(getHora);
         minuto.textContent = inserirZero(getMinuto);
         segundo.textContent = inserirZero(getSegundo);
         msg.textContent = comprimento;
     }, 1000);
-
 };
