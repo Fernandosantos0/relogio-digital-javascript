@@ -48,15 +48,16 @@ body {
     font-size: 30px;
     font-family: 'Ubuntu', sans-serif;
     letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 #container time {
-    font-size: 35px;
+    font-size: 55px;
     display: block;
     text-align: center;
 }
 
 #container span {
-    font-size: 15px;
+    font-size: 19px;
     color: green;
 }
