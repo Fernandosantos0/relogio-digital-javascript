@@ -1,8 +1,10 @@
+'use strict'
+
 window.onload = function() {
     
     const inserirZero = time => time < 10 ? `0${time}` : time;
 
-    const com = function(time) {
+    const msgText = function(time) {
         time = Number.parseInt(time);
 
         if(time < 6) {
@@ -66,7 +68,7 @@ window.onload = function() {
         const getMinuto = dataTime.getMinutes();
         const getSegundo = dataTime.getSeconds();
 
-        const comprimento = com(getHora);
+        const comprimento = msgText(getHora);
         mudaFundo(comprimento);
 
         hora.textContent = inserirZero(getHora);
