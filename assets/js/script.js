@@ -1,5 +1,5 @@
 window.onload = function() {
-
+    
     const inserirZero = time => time < 10 ? `0${time}` : time;
 
     const com = function(time) {
