@@ -31,7 +31,7 @@ window.onload = function() {
 
     const mudaFundo = function(time) {
         switch(time) {
-            case 'Bom madrugada!':
+            case 'Boa madrugada!':
                 document.body.style.backgroundImage = 'url(assets/images/bg-madrugada.jpg)';
                 break;
 
