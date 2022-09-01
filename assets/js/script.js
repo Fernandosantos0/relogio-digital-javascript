@@ -8,7 +8,7 @@ window.onload = function() {
         time = Number.parseInt(time);
 
         if(time < 6) {
-            return 'Bom madrugada!'
+            return 'Boa madrugada!'
         }
 
         if(time < 12) {
